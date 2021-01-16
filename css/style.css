@@ -31,8 +31,7 @@ html {
   text-decoration: none;
   color: inherit;
   font-style: normal;
-  outline: none;
-}
+  }
 
 .list {
   list-style: none;
@@ -298,7 +297,6 @@ margin-right: 10px;
 padding: 15px 16px;
 border-radius: 4px;
 border: 1px solid var(--footer-form);
-outline: none;
 
 font-family: Roboto;
 font-size: 16px;
@@ -317,7 +315,6 @@ margin: 0;
 padding: 10px 28px;
 border: 0;
 border-radius: 4px;
-outline: none;
 cursor: pointer;
 
 font-family: Roboto;
@@ -335,9 +332,11 @@ color: var(--second-title);
   margin-left: 10px;
 }
 
-.mailing .input::placeholder {
+.mailing .input:placeholder-shown, 
+.mailing .input:not(:placeholder-shown){
   color: var(--placeholder-text);
 }
+
 
 /* Герой */
 .overlay {
@@ -387,8 +386,7 @@ color: var(--second-title);
   border-radius: 4px;
   padding: 10px 32px;
   cursor: pointer;
-  outline: none;
-
+ 
   font-size: 16px;
   font-weight: 700;
   line-height: 1.88;
@@ -655,8 +653,7 @@ color: var(--second-title);
 
 .button-portfolio {
   display: block;
-  outline: none;
-
+  
   font-family: Roboto, sans-serif;
 
   font-size: 16px;
@@ -843,8 +840,7 @@ color: var(--second-title);
   display: flex;
   align-items: center;
   justify-content: center;
-  outline: none;
-
+  
   width: 30px;
   height: 30px;
   padding: 0;
@@ -895,18 +891,19 @@ text-align: left;
   padding: 12px 16px;
   border: 1px solid var(--border-form);
   border-radius: 4px;
-  outline: none;
-}
+ }
 
 .form-modal .input {
   border: 1px solid var(--border-form);
   border-radius: 4px;
   height: 40px;
   padding: 0;
-  outline: none;
-}
+  width: 100%;
+  
+  }
 
-.form-modal .conteiner-textarea {
+
+ .form-modal .conteiner-textarea {
   margin-bottom: 20px;
 }
 
@@ -949,6 +946,17 @@ font-weight: 400;
 line-height: 1.16;
 letter-spacing: 0.01em;
 color: var(--textarea-placeholder);
+}
+.form-modal .conteiner-icon {
+position: relative;
+width: 100%;
+}
+
+.form-modal .icon {
+  position: absolute;
+  top: 50%;
+  left: 21px;
+  transform: translate(-50%, -50%);
 }
 
 
