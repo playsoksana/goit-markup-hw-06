@@ -369,7 +369,7 @@
             Подпишитесь на рассылку
         </b>
         <div class="conteiner-mailind">
-            <input class="input" type="email" name="email">
+            <input class="input" type="email" name="email" placeholder="E-mail">
         <button class="btn" type="submit">Подписаться
         <svg class="icon" width="24" height="24">
             <use href="./images/icon.svg#icon-send"></use>
@@ -386,23 +386,24 @@
                 <use href="./images/icon.svg#icon-cross"></use>
             </svg>
         </button>
-        <form class="form-modal">
+        <form class="form-modal" autocomplete="off">
             <b class="text">Оставьте свои данные, мы вам перезвоним</b>
             <div class="wrap">
-                <label class="lable" for="name">Имя</label>
+                <label class="lable" for="name" autocomplete="on">Имя</label>
             <input class="input" type="text" name="name" id="name">
             </div>
             <div class="wrap">
-                <label class="lable" for="tel">Телефон</label>
+                <label class="lable" for="tel" autocomplete="on">Телефон</label>
             <input class="input" type="tel" name="tel" id="tel">
             </div>
             <div class="wrap">
-                <label class="lable" for="email">Почта</label>
+                <label class="lable" for="email" autocomplete="on">Почта</label>
             <input class="input" type="email" name="email" id="email">
             </div>
             <div class="wpap conteiner-textarea">
                 <label class="lable" for="comment">Комментарий</label>
-            <textarea class="textarea" name="comment" id="comment" rows="5"></textarea>
+            <textarea class="textarea" name="comment"
+            id="comment" rows="5" placeholder="Введите текст"></textarea>
             </div>
             <div class="conteiner-checkbox">
                 <input type="checkbox" name="checkbox" id="checkbox">
