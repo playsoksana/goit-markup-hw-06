@@ -18,6 +18,8 @@ html {
   --icon-color: rgba(255, 255, 255, 0.1);
   --background-hero: #c4c4c4;
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+ --border-form: rgba(33, 33, 33, 0.2);
+  
 }
 
 /* Сброс стилей и основные стили*/
@@ -225,11 +227,18 @@ body {
   margin-right: 70px;
 }
 
-.networks {
+.networks,
+.mailing {
   padding-top: 12px;
 }
 
-.networks .paragraph {
+.networks {
+  margin-right: 93px;
+}
+
+.networks .paragraph,
+.mailing .paragraph {
+  display: block;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.2;
@@ -237,7 +246,6 @@ body {
   text-transform: uppercase;
 
   margin-top: 0;
-  margin-bottom: 0;
   margin-bottom: 20px;
 }
 
@@ -274,6 +282,46 @@ body {
 
 .icon-footer .icon-item:not(:nth-last-child(1)) {
   margin-right: 10px;
+}
+
+.mailing .input {
+  display: inline-block;
+width: 356px;
+height: 50px;
+margin-right: 10px;
+padding: 0;
+
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.03em;
+text-align: left;
+}
+
+.mailing .btn {
+display: inline-flex;
+align-items: center;
+margin: 0;
+padding: 10px 28px;
+border: 0;
+border-radius: 4px;
+outline: none;
+
+font-family: Roboto;
+font-size: 16px;
+font-weight: 700;
+line-height: 1.9;
+letter-spacing: 0.06em;
+
+background-color: var(--accent-color);
+color: var(--second-title);
+
+}
+
+.mailing .icon {
+  margin-left: 10px;
 }
 
 /* Герой */
@@ -763,7 +811,7 @@ body {
   width: 528px;
   height: 581px;
   background-color: var(--backgroung-white);
-  padding: 8px 8px;
+  padding: 40px;
 }
 
 .backdrop.is-hidden .modal {
@@ -772,6 +820,9 @@ body {
 }
 
 .backdrop .btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -786,3 +837,91 @@ body {
   margin-left: auto;
   cursor: pointer;
 }
+
+.backdrop .btn:hover, 
+.backdrop .btn:focus {
+  fill:var(--accent-color);
+}
+
+/* form-modal */
+.form-modal .text {
+display: block;
+margin-bottom: 12px;
+
+font-size: 20px;
+font-weight: 700;
+line-height: 1.15;
+color: var(--primari-title);
+text-align: center;
+}
+
+.form-modal .wrap {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-modal .lable {
+margin-bottom: 4px;
+
+font-size: 12px;
+line-height: 1.1;
+letter-spacing: 0.01em;
+text-align: left;
+
+}
+
+.form-modal .textarea{
+  resize: none;
+  height: 120px;
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--border-form);
+  border-radius: 4px;
+}
+
+.form-modal .input {
+  border: 1px solid var(--border-form);
+  border-radius: 4px;
+  height: 40px;
+  padding: 0;
+}
+
+.form-modal .conteiner-textarea {
+  margin-bottom: 20px;
+}
+
+.form-modal .link-modal {
+    color: var(--accent-color);
+}
+
+.form-modal .conteiner-checkbox {
+  margin-bottom: 30px;
+}
+
+.form-modal .btn-submit {
+display: block;
+color: var(--second-title);
+background-color: var(--accent-color);
+border-radius: 4px;
+border: 0;
+padding: 10px 55px;
+margin-left: auto;
+margin-right: auto;
+cursor: pointer;
+
+
+font-family: Roboto;
+font-size: 16px;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0.06em;
+text-align: center;
+box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+}
+
+
+

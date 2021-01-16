@@ -339,7 +339,7 @@
         </address>
     </div>
     <div class="networks">
-        <p class="paragraph">присоединяйтесь</p>
+        <b class="paragraph">присоединяйтесь</b>
         <ul class="list icon-footer">
             <li class="icon-item">
                 <a  class="link" href=""><svg class="icon" width="20" height="20">
@@ -364,6 +364,19 @@
             </li>
         </ul>        
     </div>
+    <form class="mailing" action="">
+        <b class="paragraph">
+            Подпишитесь на рассылку
+        </b>
+        <div class="conteiner-mailind">
+            <input class="input" type="email" name="email">
+        <button class="btn" type="submit">Подписаться
+        <svg class="icon" width="24" height="24">
+            <use href="./images/icon.svg#icon-send"></use>
+        </svg>
+        </button>
+        </div>
+    </form>    
 </div>
 </footer>
 <div class="backdrop is-hidden" data-backdrop>
@@ -373,6 +386,32 @@
                 <use href="./images/icon.svg#icon-cross"></use>
             </svg>
         </button>
+        <form class="form-modal">
+            <b class="text">Оставьте свои данные, мы вам перезвоним</b>
+            <div class="wrap">
+                <label class="lable" for="name">Имя</label>
+            <input class="input" type="text" name="name" id="name">
+            </div>
+            <div class="wrap">
+                <label class="lable" for="tel">Телефон</label>
+            <input class="input" type="tel" name="tel" id="tel">
+            </div>
+            <div class="wrap">
+                <label class="lable" for="email">Почта</label>
+            <input class="input" type="email" name="email" id="email">
+            </div>
+            <div class="wpap conteiner-textarea">
+                <label class="lable" for="comment">Комментарий</label>
+            <textarea class="textarea" name="comment" id="comment" rows="5"></textarea>
+            </div>
+            <div class="conteiner-checkbox">
+                <input type="checkbox" name="checkbox" id="checkbox">
+            <label class="label-checbox" for="checkbox">Соглашаюсь с рассылкой и принимаю
+                <a class="link-modal" href="#">Условия договора</a>
+            </label>
+            </div>
+            <button class="btn-submit" type="submit">Отправить</button>
+        </form>
     </div>
 </div>
 <script src="./js/modal.js"></script>
