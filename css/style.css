@@ -823,7 +823,6 @@ color: var(--second-title);
   transition: scale 250ms var(--cubic), opacity 250ms var(--cubic);
 
   width: 528px;
-  height: 581px;
   background-color: var(--backgroung-white);
   padding: 40px;
 }
@@ -872,26 +871,23 @@ text-align: center;
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
 
-.form-modal .lable {
+.form-modal .wrap:last-child {
+  margin-bottom: 20px;
+}
+
+.form-modal .text-lable {
+  display:inline-block;
+  margin-top: 0;
 margin-bottom: 4px;
 
 font-size: 12px;
 line-height: 1.1;
 letter-spacing: 0.01em;
 text-align: left;
-
 }
-
-.form-modal .textarea{
-  resize: none;
-  height: 120px;
-  width: 100%;
-  padding: 12px 16px;
-  border: 1px solid var(--border-form);
-  border-radius: 4px;
- }
 
 .form-modal .input {
   border: 1px solid var(--border-form);
@@ -899,20 +895,31 @@ text-align: left;
   height: 40px;
   padding: 0;
   width: 100%;
-  
+  padding: 12px 12px 12px 42px;
+  transition: border-color 250ms var(--cubic), outline-color 250ms var(--cubic);
   }
 
+  .form-modal .textarea{
+    resize: none;
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--border-form);
+    border-radius: 4px;
+    transition: border-color 250ms var(--cubic), outline-color 250ms var(--cubic);
+  }
 
- .form-modal .conteiner-textarea {
-  margin-bottom: 20px;
-}
-
-.form-modal .link-modal {
+ .form-modal .link-modal {
     color: var(--accent-color);
 }
 
 .form-modal .conteiner-checkbox {
   margin-bottom: 30px;
+}
+
+.form-modal .checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .form-modal .btn-submit {
@@ -957,7 +964,22 @@ width: 100%;
   top: 50%;
   left: 21px;
   transform: translate(-50%, -50%);
+  color: var(--primari-title);
+  fill: currentColor;
+  transition: color 250ms var(--cubic);
 }
 
+.form-modal .input:hover + .icon,
+.form-modal .input:focus-within + .icon,
+.form-modal .input:not(:placeholder-shown) + .icon {
+  color: var(--accent-color);  
+}
 
+.form-modal .input:focus,
+.form-modal .input:hover,
+.form-modal .textarea:focus,
+.form-modal .textarea:hover {
+  border-color: var(--accent-color);
+  outline: var(--accent-color);
+  }
 
