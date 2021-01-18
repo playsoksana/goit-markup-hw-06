@@ -873,8 +873,11 @@ text-align: center;
   display: flex;
   flex-direction: column;
   padding: 0;
-  
-}
+  }
+
+  .form-modal .comment {
+    margin-bottom: 20px;
+  }
 
 .form-modal .wrap:last-child {
   margin-bottom: 20px;
@@ -882,13 +885,11 @@ text-align: center;
 
 .form-modal .text-lable {
   display:inline-block;
-  margin-top: 0;
-margin-bottom: 4px;
-
-font-size: 12px;
-line-height: 1.1;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
 letter-spacing: 0.01em;
-text-align: left;
+
 }
 
 .form-modal .input {
@@ -916,7 +917,8 @@ text-align: left;
     color: var(--accent-color);
 }
 
-.form-modal .conteiner-checkbox {
+.form-modal .label-checkbox {
+  display: block;
   position: relative;
   margin-bottom: 30px;
 }
@@ -1000,7 +1002,7 @@ width: 100%;
   transition: color 250ms var(--cubic);
 }
 
-.form-modal .input:hover + .icon,
+
 .form-modal .input:focus-within + .icon,
 .form-modal .input:not(:placeholder-shown) + .icon {
   color: var(--accent-color);  
