@@ -695,8 +695,9 @@ body {
   line-height: 2;
 
   display: flex;
-  flex-wrap: wrap;
 
+  position: relative;
+  flex-wrap: wrap;
   margin: -30px 0 0 -30px;
 
   background-color: var(--backgroung-white);
@@ -861,6 +862,7 @@ body {
 }
 
 .form-modal .wrap {
+  position: relative;
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
@@ -967,18 +969,14 @@ body {
   letter-spacing: 0.01em;
   color: var(--textarea-placeholder);
 }
-.form-modal .conteiner-icon {
-  position: relative;
-  width: 100%;
-}
-
 .form-modal .label-checkbox {
   margin-left: 37px;
 }
 
 .form-modal .icon {
   position: absolute;
-  top: 50%;
+  top: calc(50% + 8.5px);
+
   left: 21px;
   transform: translate(-50%, -50%);
   color: var(--primari-title);
