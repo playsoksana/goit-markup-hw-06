@@ -442,7 +442,7 @@ body {
   margin-bottom: 0;
 }
 
-.box {
+.company .box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -862,26 +862,16 @@ body {
 }
 
 .form-modal .wrap {
-  position: relative;
-  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-  padding: 0;
-}
-
-.form-modal .comment {
-  margin-bottom: 20px;
-}
-
-.form-modal .wrap:last-child {
-  margin-bottom: 20px;
-}
+  
+  }
 
 .form-modal .text-lable {
   display: inline-block;
   margin-bottom: 4px;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.2;
   letter-spacing: 0.01em;
 }
 
@@ -903,8 +893,16 @@ body {
   border: 1px solid var(--border-form);
   border-radius: 4px;
   transition: border-color 250ms var(--cubic), outline-color 250ms var(--cubic);
-  cursor: pointer;
+  cursor: pointer;  
+  }
+
+.form-modal .textarea::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.01em;
 }
+
 
 .form-modal .link-modal {
   color: var(--accent-color);
@@ -975,7 +973,7 @@ body {
 
 .form-modal .icon {
   position: absolute;
-  top: calc(50% + 8.5px);
+  top: 50%;
 
   left: 21px;
   transform: translate(-50%, -50%);
@@ -994,3 +992,19 @@ body {
   border-color: var(--accent-color);
   outline: var(--accent-color);
 }
+
+.conteiner-form {
+  width: 100%;
+  margin-bottom: 10px;
+  
+}
+
+ .form-modal .comments {
+  margin-bottom: 20px;
+   
+}
+.form-modal .box {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+  }
