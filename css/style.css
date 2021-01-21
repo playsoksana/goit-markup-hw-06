@@ -229,13 +229,13 @@ body {
   margin-right: 70px;
 }
 
+.mailing {
+  margin-left: auto;
+}
+
 .networks,
 .mailing {
   padding-top: 12px;
-}
-
-.networks {
-  margin-right: 93px;
 }
 
 .networks .paragraph,
