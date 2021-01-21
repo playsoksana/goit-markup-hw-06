@@ -197,6 +197,7 @@ body {
 
 .footer .conteiner {
   display: flex;
+  justify-content: space-between;
 }
 
 .footer {
@@ -223,14 +224,6 @@ body {
 .footer-list:not(:last-child) {
   display: block;
   margin-bottom: 9px;
-}
-
-.box-logo {
-  margin-right: 70px;
-}
-
-.mailing {
-  margin-left: auto;
 }
 
 .networks,
@@ -864,8 +857,7 @@ body {
 .form-modal .wrap {
   display: flex;
   flex-direction: column;
-  
-  }
+}
 
 .form-modal .text-lable {
   display: inline-block;
@@ -893,8 +885,8 @@ body {
   border: 1px solid var(--border-form);
   border-radius: 4px;
   transition: border-color 250ms var(--cubic), outline-color 250ms var(--cubic);
-  cursor: pointer;  
-  }
+  cursor: pointer;
+}
 
 .form-modal .textarea::placeholder {
   font-size: 14px;
@@ -902,7 +894,6 @@ body {
   line-height: 1.71;
   letter-spacing: 0.01em;
 }
-
 
 .form-modal .link-modal {
   color: var(--accent-color);
@@ -996,15 +987,13 @@ body {
 .conteiner-form {
   width: 100%;
   margin-bottom: 10px;
-  
 }
 
- .form-modal .comments {
+.form-modal .comments {
   margin-bottom: 20px;
-   
 }
 .form-modal .box {
   position: relative;
   display: inline-flex;
   width: 100%;
-  }
+}
